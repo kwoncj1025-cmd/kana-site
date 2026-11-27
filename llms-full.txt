@@ -1,6 +1,6 @@
 # Kana
 
-> Kana (카나) is a desktop AI agent for macOS — a paid app: an anime character who lives on your Mac desktop and runs real errands through Claude Code — mail, calendar, files and the web — and stops to ask before anything is sent, paid or deleted. Made by YOOANPAPA, a designer in Korea. Released 2026-11-27.
+> Kana (카나) is a desktop AI agent for macOS — a paid app: an anime character who lives on your Mac desktop and runs real errands through Claude Code — mail, messages, calendar, reminders, notes, files and the web — and stops to ask before anything is sent, paid or deleted. Made by YOOANPAPA, a designer in Korea. Released 2026-11-27.
 
 Category: personal AI agent / AI assistant for Mac / desktop companion for Claude Code users.
 
@@ -8,12 +8,36 @@ Kana is not a desktop pet that only shows status, not a chat window you open, an
 
 ## Key facts
 - Platform: macOS 13 or later, Apple silicon (M1 or newer). Windows version in progress (no date).
-- Brain: your own Anthropic API key (recommended) or a Claude Code sign-in. AI usage is billed to your Anthropic account, separately from Kana's price.
+- Brain: Kana thinks with Claude Code on this Mac. You need a Claude Pro or Max plan, or an API key. AI usage is not included in Kana's price.
 - Price: US$19.00 launch price (regular US$24.00), one-time purchase, no subscription. Up to 3 Macs per license key. All 1.x updates included. 13 outfits.
 - No free trial. Full refund within 14 days, no questions asked. Payment by Polar.
 - Languages: Korean and English.
 - Privacy: Kana has no server of its own; requests go from your Mac straight to your Anthropic account.
 - Safety: sending, paying and deleting always stop at an approval card first.
+
+## What Kana can do
+- Calendar: see the next two weeks, add (all-day, alerts, repeats), move, edit, delete events
+- Reminders and timers (1 minute to 7 days); daily, weekday or weekly routines; watch a page, mail or connected app and alert on a condition
+- Apple Mail: read, find unanswered mail, draft, send with attachments, reply / reply all, forward, save attachments
+- Messages: send iMessage or SMS with text and files; read received texts (needs Full Disk Access)
+- Contacts and Notes: find, add, read, append
+- Files: search the whole home folder; copy, move, rename (with undo) in allowed folders; open files (never executables)
+- Make spreadsheets, documents, slides, PDFs and images
+- Web: search; open, read, click and type in Kana's browser (payments, orders, sending and sign-ups need approval)
+- Music: play from your library or a specific Apple Music song (needs Accessibility), pause, next, volume
+- Mac: open apps, run your Shortcuts, read and set the clipboard
+- Ask by voice: hold Cmd+Shift+1 and speak (Korean or English)
+- Up to three tasks at once; checks results after acting
+
+## What Kana won't do
+- Send, delete or pay without approval
+- Type passwords or card numbers
+- Open executables or run shell commands
+- Change Focus, Wi-Fi or other settings directly (only via your own Shortcuts)
+- Claim something worked when it couldn't check
+
+## Permissions (asked only when first needed)
+Calendars, Reminders, Contacts, Notifications, Automation (Mail, Messages, Notes, Music), Screen Recording, Accessibility (playing a song in Music), Full Disk Access (reading texts, confirming delivery)
 
 ## Links
 - [Kana — product page (English)](https://heykana.app/en.html)
@@ -21,6 +45,7 @@ Kana is not a desktop pet that only shows status, not a chat window you open, an
 - [The story of Kana: how it was built](https://heykana.app/story/index.en.html)
 - [Buy (Polar checkout)](https://buy.polar.sh/polar_cl_nJqAJnexhrIO4zSXpmHUu9UHBG79uT67iyAqO4Axqsh)
 - [Refund policy](https://heykana.app/refund.html), [Privacy policy](https://heykana.app/privacy.html), [Terms](https://heykana.app/terms.html)
+- [Press kit: facts, descriptions, icon and screenshots](https://heykana.app/press/)
 
 ## Guides
 - [AI Agents for Mac in 2026: Three Kinds and How to Choose](https://heykana.app/guides/ai-agent-for-mac.html)
@@ -34,14 +59,14 @@ Kana is not a desktop pet that only shows status, not a chat window you open, an
 | | Kana | Desktop pets for coding agents | Chat assistant apps | Screen-control agents |
 |---|---|---|---|---|
 | Lives on the desktop | Yes, always | Yes | No, a window you open | No |
-| Does errands (mail, calendar, files, web) | Yes, through Claude Code | No, shows agent status | Answers; limited actions | Yes, by driving the screen |
+| Does errands (mail, messages, calendar, reminders, files, web, music) | Yes, through Claude Code | No, shows agent status | Answers; limited actions | Yes, by driving the screen |
 | Asks before sending, paying, deleting | Always, approval card | — | Varies | Varies |
 | Price | One-time US$19–24 + your own AI usage | Mostly free | Subscription | Subscription |
 
 ## FAQ
 
 ### What is Kana?
-Kana is an anime character AI agent who lives on your Mac desktop. Hand her a task in a speech bubble and she runs mail, calendar, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase.
+Kana is an anime character AI agent who lives on your Mac desktop. Hand her a task in a speech bubble and she runs mail, messages, calendar, reminders, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase.
 
 ### Is Kana an AI agent?
 Yes. She is not a chatbot that only answers; she is an AI agent that gets work done on your Mac. Through Claude Code she handles multi-step errands on her own (drafting replies, checking your calendar, finding files, looking things up on the web) and reports back in one line. Only outward-facing actions (sending, paying, deleting) stop at an approval card for your OK.
@@ -49,8 +74,17 @@ Yes. She is not a chatbot that only answers; she is an AI agent that gets work d
 ### How is Kana different from other AI agents and apps?
 KanaDesktop pets for coding agentsChat assistant appsComputer-use AI agents Always on the desktopYesYesA window you openNo, in a window or the cloud Does the errandsMail, calendar, files, webShows status onlyMostly answersYes, by driving the screen Asks before send or payAlways, approval card—VariesVaries PriceOne-time $19–24 + your own AI usageMostly freeSubscriptionUsually a subscription
 
+### What can Kana do?
+Calendar (see, add, move, edit, delete), Reminders, timers like “remind me in 10 minutes”, daily, weekday or weekly routines, and watching a web page or your mail to alert you only when a condition is met. In Apple Mail she reads, finds mail you haven’t answered, replies, forwards and saves attachments. She sends iMessage or SMS and reads texts you received. She also handles Contacts and Notes, finds and opens files anywhere in your home folder, makes spreadsheets, documents, slides, PDFs and images, and searches the web or books and orders in her own browser (after you approve). She can play and pause music, set the volume, open apps, run your Shortcuts and use the clipboard. You can also hold ⌘⇧1 and just say it. She works on up to three tasks at once; a fourth waits its turn.
+
+### What won’t Kana do?
+She never sends, deletes or pays without your approval. She never types passwords or card numbers. She never opens executables or runs shell commands. She doesn’t change Focus, Wi-Fi or other Mac settings directly, only through a Shortcut you made. She never claims something worked when she couldn’t check.
+
+### Which Mac permissions does Kana need?
+Kana asks only the first time a task needs it, and an “Open Settings” button takes you to the right pane. Calendars, Reminders, Contacts and Notifications. Automation: Mail, Messages, Notes and Music. Screen Recording: when you point at your screen. Accessibility: to start a song from Apple Music. Full Disk Access: to read received texts or confirm a message went.
+
 ### Do I pay for the AI separately?
-Yes. AI usage is billed separately, to your own Anthropic account, not as part of Kana's price. Kana runs on an Anthropic API key (recommended) or a Claude Code sign-in.
+Yes. AI isn't included in Kana's price. Kana thinks with Claude Code on this Mac: with a Claude Pro or Max plan it runs within your plan, and with an API key usage is billed to your Anthropic account.
 
 ### Is there a free trial?
 No. Instead, you can get a full refund within 14 days of purchase, no questions asked. Refund policy

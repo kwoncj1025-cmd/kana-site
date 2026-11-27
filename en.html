@@ -51,7 +51,7 @@
    "applicationSubCategory": "AI agent",
    "keywords": "AI agent for Mac, desktop AI agent, macOS AI agent, personal AI agent, AI assistant for Mac, Claude Code companion, Claude Code agent, AI desktop companion, anime desktop assistant, desktop pet Mac, AI 에이전트, 맥 AI 에이전트, 데스크톱 AI 비서, 맥 AI 비서, 클로드 코드, 바탕화면 캐릭터",
    "operatingSystem": "macOS",
-   "softwareRequirements": "macOS 13 or later, Apple silicon (M1 or newer); an Anthropic API key or a Claude Code sign-in",
+   "softwareRequirements": "macOS 13 or later, Apple silicon (M1 or newer); Claude Code with a Claude Pro or Max plan, or an API key",
    "inLanguage": [
     "ko",
     "en"
@@ -131,7 +131,7 @@
      "name": "What is Kana?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Kana is an anime character AI agent who lives on your Mac desktop. Hand her a task in a speech bubble and she runs mail, calendar, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase."
+      "text": "Kana is an anime character AI agent who lives on your Mac desktop. Hand her a task in a speech bubble and she runs mail, messages, calendar, reminders, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase."
      }
     },
     {
@@ -152,10 +152,34 @@
     },
     {
      "@type": "Question",
+     "name": "What can Kana do?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Calendar (see, add, move, edit, delete), Reminders, timers like “remind me in 10 minutes”, daily, weekday or weekly routines, and watching a web page or your mail to alert you only when a condition is met. In Apple Mail she reads, finds mail you haven’t answered, replies, forwards and saves attachments. She sends iMessage or SMS and reads texts you received. She also handles Contacts and Notes, finds and opens files anywhere in your home folder, makes spreadsheets, documents, slides, PDFs and images, and searches the web or books and orders in her own browser (after you approve). She can play and pause music, set the volume, open apps, run your Shortcuts and use the clipboard. You can also hold ⌘⇧1 and just say it. She works on up to three tasks at once; a fourth waits its turn."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What won’t Kana do?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "She never sends, deletes or pays without your approval. She never types passwords or card numbers. She never opens executables or runs shell commands. She doesn’t change Focus, Wi-Fi or other Mac settings directly, only through a Shortcut you made. She never claims something worked when she couldn’t check."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which Mac permissions does Kana need?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Kana asks only the first time a task needs it, and an “Open Settings” button takes you to the right pane. Calendars, Reminders, Contacts and Notifications. Automation: Mail, Messages, Notes and Music. Screen Recording: when you point at your screen. Accessibility: to start a song from Apple Music. Full Disk Access: to read received texts or confirm a message went."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "Do I pay for the AI separately?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. AI usage is billed separately, to your own Anthropic account, not as part of Kana's price. Kana runs on an Anthropic API key (recommended) or a Claude Code sign-in."
+      "text": "Yes. AI isn't included in Kana's price. Kana thinks with Claude Code on this Mac: with a Claude Pro or Max plan it runs within your plan, and with an API key usage is billed to your Anthropic account."
      }
     },
     {
@@ -453,7 +477,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
         <p class="ans"><span lang="en">Here is the draft. Please check it before I send.</span></p>
         <p class="ot"><span lang="en">Gothic · firm reminders</span></p></li>
     </ol>
-    <p class="also"><span lang="en">Mail and Messages, Calendar and Reminders, Excel, Word, PowerPoint and PDF, web search and comparison, bookings and payments (after you approve), repeating tasks, and asking by voice. All 13 outfits are included.</span></p>
+    <p class="also"><span lang="en">Mail replies, forwards and saved attachments, Messages (including texts you received), moving and editing events, Reminders, “remind me in 10 minutes” timers, Notes, Contacts, finding and opening files anywhere in your home folder, Excel, Word, PowerPoint and PDF, web search plus bookings and payments (after you approve), playing music and setting the volume, opening apps and running your Shortcuts, daily or weekly routines, and asking by voice. All 13 outfits are included.</span></p>
   </div>
 </section>
 
@@ -465,6 +489,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
         <li><b><span lang="en">Anything that leaves your Mac needs a press and hold.</span></b><span><span lang="en">Sending, posting, booking and paying show exactly what goes out, then wait. Reading needs no approval. Changes on your Mac are listed for a yes first.</span></span></li>
         <li><b><span lang="en">She never touches passwords, card numbers or one-time codes.</span></b></li>
         <li><b><span lang="en">Text in mail and web pages is data, not orders.</span></b><span><span lang="en">Recipients and amounts come only from what you said.</span></span></li>
+        <li><b><span lang="en">She checks her own work.</span></b><span><span lang="en">After acting she reads it back, and says so plainly when she can’t confirm it worked.</span></span></li>
       </ol>
     </div>
     <div class="demo" aria-label="승인 카드 예시 / Approval card example">
@@ -491,7 +516,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
     <h2 class="big" id="h-need"><span lang="en">You need three things.</span></h2>
     <ol class="steps">
       <li><span class="n">1</span><b><span lang="en">An Apple silicon Mac</span></b><p><span lang="en">M1 or newer, macOS 13 or later</span></p></li>
-      <li><span class="n">2</span><b><span lang="en">An Anthropic API key (recommended)</span></b><p><span lang="en">or a Claude Code sign-in. Kana thinks with your own Claude.</span></p></li>
+      <li><span class="n">2</span><b><span lang="en">Claude Code</span></b><p><span lang="en">with a Claude Pro or Max plan, or an API key. Kana thinks with Claude Code on this Mac.</span></p></li>
       <li><span class="n">3</span><b><span lang="en">Internet</span></b><p><span lang="en">For a once-a-day license check. Works 7 days offline.</span></p></li>
     </ol>
   </div>
@@ -517,7 +542,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
     <h2 class="big" id="h-faq"><span lang="en">Questions</span></h2>
     <div class="list">
       <details><summary><span lang="en">What is Kana?</span></summary><div class="a">
-        <p><span lang="en">Kana is an anime character AI agent who lives on your Mac desktop. Hand her a task in a speech bubble and she runs mail, calendar, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase.</span></p></div></details>
+        <p><span lang="en">Kana is an anime character AI agent who lives on your Mac desktop. Hand her a task in a speech bubble and she runs mail, messages, calendar, reminders, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase.</span></p></div></details>
       <details><summary><span lang="en">Is Kana an AI agent?</span></summary><div class="a">
         <p><span lang="en">Yes. She is not a chatbot that only answers; she is an AI agent that gets work done on your Mac. Through Claude Code she handles multi-step errands on her own (drafting replies, checking your calendar, finding files, looking things up on the web) and reports back in one line. Only outward-facing actions (sending, paying, deleting) stop at an approval card for your OK.</span></p></div></details>
       <details><summary><span lang="en">How is Kana different from other AI agents and apps?</span></summary><div class="a">
@@ -527,8 +552,27 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
           <tr><th><span lang="en">Asks before send or pay</span></th><td><span lang="en">Always, approval card</span></td><td>—</td><td><span lang="en">Varies</span></td><td><span lang="en">Varies</span></td></tr>
           <tr><th><span lang="en">Price</span></th><td><span lang="en">One-time $19–24 + your own AI usage</span></td><td><span lang="en">Mostly free</span></td><td><span lang="en">Subscription</span></td><td><span lang="en">Usually a subscription</span></td></tr>
         </tbody></table></div></details>
+      <details><summary><span lang="en">What can Kana do?</span></summary><div class="a">
+        <p><span lang="en">Calendar (see, add, move, edit, delete), Reminders, timers like “remind me in 10 minutes”, daily, weekday or weekly routines, and watching a web page or your mail to alert you only when a condition is met. In Apple Mail she reads, finds mail you haven’t answered, replies, forwards and saves attachments. She sends iMessage or SMS and reads texts you received. She also handles Contacts and Notes, finds and opens files anywhere in your home folder, makes spreadsheets, documents, slides, PDFs and images, and searches the web or books and orders in her own browser (after you approve). She can play and pause music, set the volume, open apps, run your Shortcuts and use the clipboard. You can also hold ⌘⇧1 and just say it. She works on up to three tasks at once; a fourth waits its turn.</span></p></div></details>
+      <details><summary><span lang="en">What won’t Kana do?</span></summary><div class="a">
+        <ul>
+          <li><span lang="en">She never sends, deletes or pays without your approval.</span></li>
+          <li><span lang="en">She never types passwords or card numbers.</span></li>
+          <li><span lang="en">She never opens executables or runs shell commands.</span></li>
+          <li><span lang="en">She doesn’t change Focus, Wi-Fi or other Mac settings directly, only through a Shortcut you made.</span></li>
+          <li><span lang="en">She never claims something worked when she couldn’t check.</span></li>
+        </ul></div></details>
+      <details><summary><span lang="en">Which Mac permissions does Kana need?</span></summary><div class="a">
+        <p><span lang="en">Kana asks only the first time a task needs it, and an “Open Settings” button takes you to the right pane.</span></p>
+        <ul>
+          <li><span lang="en">Calendars, Reminders, Contacts and Notifications.</span></li>
+          <li><span lang="en">Automation: Mail, Messages, Notes and Music.</span></li>
+          <li><span lang="en">Screen Recording: when you point at your screen.</span></li>
+          <li><span lang="en">Accessibility: to start a song from Apple Music.</span></li>
+          <li><span lang="en">Full Disk Access: to read received texts or confirm a message went.</span></li>
+        </ul></div></details>
       <details><summary><span lang="en">Do I pay for the AI separately?</span></summary><div class="a">
-        <p><span lang="en">Yes. AI usage is billed separately, to your own Anthropic account, not as part of Kana's price. Kana runs on an Anthropic API key (recommended) or a Claude Code sign-in.</span></p></div></details>
+        <p><span lang="en">Yes. AI isn't included in Kana's price. Kana thinks with Claude Code on this Mac: with a Claude Pro or Max plan it runs within your plan, and with an API key usage is billed to your Anthropic account.</span></p></div></details>
       <details><summary><span lang="en">Is there a free trial?</span></summary><div class="a">
         <p><span lang="en">No. Instead, you can get a full refund within 14 days of purchase, no questions asked. <a href="refund.html" data-keeplang>Refund policy</a></span></p></div></details>
       <details><summary><span lang="en">How do I install it?</span></summary><div class="a">
@@ -565,6 +609,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
       <li><a href="privacy.html" data-keeplang><span lang="en">Privacy policy</span></a></li>
       <li><a href="terms.html" data-keeplang><span lang="en">Terms of use</span></a></li>
       <li><a lang="en" href="guides/ai-agent-for-mac.html">Guides</a></li>
+      <li><a lang="en" href="press/">Press</a></li>
     </ul></div>
     <div><b><span lang="en">Buy</span></b><ul>
       <li><a href="#buy"><span lang="en">See the price</span></a></li>

@@ -51,7 +51,7 @@
    "applicationSubCategory": "AI agent",
    "keywords": "AI agent for Mac, desktop AI agent, macOS AI agent, personal AI agent, AI assistant for Mac, Claude Code companion, Claude Code agent, AI desktop companion, anime desktop assistant, desktop pet Mac, AI 에이전트, 맥 AI 에이전트, 데스크톱 AI 비서, 맥 AI 비서, 클로드 코드, 바탕화면 캐릭터",
    "operatingSystem": "macOS",
-   "softwareRequirements": "macOS 13 or later, Apple silicon (M1 or newer); an Anthropic API key or a Claude Code sign-in",
+   "softwareRequirements": "macOS 13 or later, Apple silicon (M1 or newer); Claude Code with a Claude Pro or Max plan, or an API key",
    "inLanguage": [
     "ko",
     "en"
@@ -131,7 +131,7 @@
      "name": "카나는 무엇인가요?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "카나는 맥 바탕화면에 사는 애니 캐릭터 AI 에이전트예요. 말풍선으로 일을 맡기면 Claude Code로 메일·일정·파일·웹 심부름을 하고 한 줄로 보고해요. 보내기·결제·삭제 앞에서는 늘 승인 카드에서 멈춰서 물어요. macOS용(Apple 실리콘, macOS 13 이상), 한 번 사면 끝이에요."
+      "text": "카나는 맥 바탕화면에 사는 애니 캐릭터 AI 에이전트예요. 말풍선으로 일을 맡기면 Claude Code로 메일·메시지·일정·미리 알림·파일·웹 심부름을 하고 한 줄로 보고해요. 보내기·결제·삭제 앞에서는 늘 승인 카드에서 멈춰서 물어요. macOS용(Apple 실리콘, macOS 13 이상), 한 번 사면 끝이에요."
      }
     },
     {
@@ -152,10 +152,34 @@
     },
     {
      "@type": "Question",
+     "name": "카나가 할 수 있는 일은 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "일정(보기·새로 넣기·옮기기·고치기·지우기), 미리 알림, 「10분 뒤 알려 줘」 같은 타이머, 매일·평일·매주 되풀이하는 일, 웹 쪽·메일을 지켜보다가 조건이 맞으면 알리기를 해요. 메일은 맥 메일 앱에서 읽기, 답장 안 한 메일 찾기, 답장, 전달, 첨부 저장을 해요. 메시지(아이메시지·문자)는 보내기와 받은 문자 읽기를 해요. 연락처, 메모, 맥 홈 폴더 전체에서 파일 찾기와 열기, 표·문서·발표·PDF·그림 만들기, 웹 찾기와 카나 브라우저로 예약·주문(승인 뒤)도 해요. 음악 틀기·멈추기·소리 크기, 앱 열기, 단축어 실행, 클립보드도 다뤄요. ⌘⇧1을 꾹 누르고 말로 부탁할 수도 있어요. 일은 한 번에 세 개까지 하고, 넷째는 줄을 세웠다가 시작해요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "카나가 하지 않는 일은 무엇인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "승인 없이 보내기·지우기·결제하지 않아요. 암호·카드 번호를 입력하지 않아요. 실행 파일을 열거나 셸 명령을 돌리지 않아요. 방해 금지·와이파이 같은 맥 설정을 직접 바꾸지 않아요. 당신이 만든 단축어가 있을 때만 그 단축어로 바꿔요. 확인하지 못한 일을 했다고 말하지 않아요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "맥에서 어떤 허락이 필요한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "처음부터 다 묻지 않고, 그 일을 처음 할 때만 물어요. 허락이 없으면 「설정 열기」로 맞는 자리를 바로 열어 줘요. 캘린더·미리 알림·연락처·알림. 자동화: 메일·메시지·메모·음악을 다룰 때. 화면 기록: 「이 화면」을 볼 때. 손쉬운 사용: Apple Music 곡을 바로 틀 때. 전체 디스크 접근: 받은 문자를 읽거나 메시지가 갔는지 확인할 때."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "AI 값은 따로 드나요?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "네. AI 요금은 카나 값과 별개로, 당신의 Anthropic 계정에서 따로 나가요. 카나는 Anthropic API 키(권장)나 Claude Code 로그인으로 움직여요."
+      "text": "네. AI 값은 카나 값에 들어 있지 않아요. 카나는 이 맥의 Claude Code로 생각해요. Claude Pro·Max 구독이 있으면 그 구독 안에서 쓰고, API 키면 쓴 만큼 당신의 Anthropic 계정에 청구돼요."
      }
     },
     {
@@ -453,7 +477,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
         <p class="ans"><span lang="ko">초안이에요. 보내기 전에 봐 줘요.</span></p>
         <p class="ot"><span lang="ko">고딕 옷 · 독촉은 단호하게</span></p></li>
     </ol>
-    <p class="also"><span lang="ko">메일·메시지, 캘린더·미리 알림, 엑셀·워드·파워포인트·PDF, 웹 찾기와 비교, 예약과 결제(승인 뒤), 되풀이하는 일, 말로 부탁하기까지 해요. 옷은 13벌 모두 들어 있어요.</span></p>
+    <p class="also"><span lang="ko">메일 답장·전달·첨부 저장, 메시지와 받은 문자, 일정 옮기기와 고치기, 미리 알림, 「10분 뒤 알려 줘」 타이머, 메모, 연락처, 맥 전체에서 파일 찾기와 열기, 엑셀·워드·파워포인트·PDF, 웹 찾기와 예약·결제(승인 뒤), 음악 틀기와 소리 크기, 앱 열기와 단축어, 매일·매주 되풀이하는 일, 말로 부탁하기까지 해요. 옷은 13벌 모두 들어 있어요.</span></p>
   </div>
 </section>
 
@@ -465,6 +489,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
         <li><b><span lang="ko">밖으로 나가는 일은 꾹 눌러야 해요.</span></b><span><span lang="ko">보내기·게시·예약·결제는 무엇이 나가는지 보여 주고 기다려요. 읽기는 그냥 하고, 맥 안을 바꾸는 일은 목록으로 확인받아요.</span></span></li>
         <li><b><span lang="ko">암호·카드 번호·인증번호는 만지지 않아요.</span></b></li>
         <li><b><span lang="ko">메일·웹 속 글은 자료일 뿐이에요.</span></b><span><span lang="ko">받는 사람과 금액은 당신이 한 말에서만 가져와요.</span></span></li>
+        <li><b><span lang="ko">했으면 다시 읽어 확인해요.</span></b><span><span lang="ko">실제로 됐는지 확인하지 못하면 「확인 못 했어요」라고 그대로 말해요.</span></span></li>
       </ol>
     </div>
     <div class="demo" aria-label="승인 카드 예시 / Approval card example">
@@ -491,7 +516,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
     <h2 class="big" id="h-need"><span lang="ko">필요한 건 셋.</span></h2>
     <ol class="steps">
       <li><span class="n">1</span><b><span lang="ko">Apple 실리콘 맥</span></b><p><span lang="ko">M1 이후 칩, macOS 13 이상</span></p></li>
-      <li><span class="n">2</span><b><span lang="ko">Anthropic API 키(권장)</span></b><p><span lang="ko">또는 <span class="nb">Claude Code 로그인.</span> 카나의 머리는 당신의 Claude예요.</span></p></li>
+      <li><span class="n">2</span><b><span lang="ko">Claude Code</span></b><p><span lang="ko">Claude Pro·Max 구독이나 API 키. 카나는 <span class="nb">이 맥의 Claude Code로</span> 생각해요.</span></p></li>
       <li><span class="n">3</span><b><span lang="ko">인터넷</span></b><p><span lang="ko">라이선스를 하루 한 번 확인해요. 끊겨도 7일은 그대로 써요.</span></p></li>
     </ol>
   </div>
@@ -517,7 +542,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
     <h2 class="big" id="h-faq"><span lang="ko">자주 묻는 것</span></h2>
     <div class="list">
       <details><summary><span lang="ko">카나는 무엇인가요?</span></summary><div class="a">
-        <p><span lang="ko">카나는 맥 바탕화면에 사는 애니 캐릭터 AI 에이전트예요. 말풍선으로 일을 맡기면 Claude Code로 메일·일정·파일·웹 심부름을 하고 한 줄로 보고해요. 보내기·결제·삭제 앞에서는 늘 승인 카드에서 멈춰서 물어요. macOS용(Apple 실리콘, macOS 13 이상), 한 번 사면 끝이에요.</span></p></div></details>
+        <p><span lang="ko">카나는 맥 바탕화면에 사는 애니 캐릭터 AI 에이전트예요. 말풍선으로 일을 맡기면 Claude Code로 메일·메시지·일정·미리 알림·파일·웹 심부름을 하고 한 줄로 보고해요. 보내기·결제·삭제 앞에서는 늘 승인 카드에서 멈춰서 물어요. macOS용(Apple 실리콘, macOS 13 이상), 한 번 사면 끝이에요.</span></p></div></details>
       <details><summary><span lang="ko">카나는 AI 에이전트인가요?</span></summary><div class="a">
         <p><span lang="ko">네. 묻는 말에 답만 하는 챗봇이 아니라, 맥에서 직접 일을 해 두는 AI 에이전트예요. 메일 초안 쓰기, 일정 확인, 파일 찾기, 웹 찾아보기처럼 여러 단계 일을 Claude Code로 스스로 하고 한 줄로 보고해요. 밖으로 나가는 일(보내기·결제·삭제)만은 승인 카드에서 멈춰서 물어요.</span></p></div></details>
       <details><summary><span lang="ko">다른 AI 에이전트·AI 앱과 무엇이 다른가요?</span></summary><div class="a">
@@ -527,8 +552,27 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
           <tr><th><span lang="ko">보내기·결제 전 확인</span></th><td><span lang="ko">늘, 승인 카드</span></td><td>—</td><td><span lang="ko">앱마다 다름</span></td><td><span lang="ko">앱마다 다름</span></td></tr>
           <tr><th><span lang="ko">값</span></th><td><span lang="ko">한 번 19~24달러 + 내 AI 사용료</span></td><td><span lang="ko">대개 무료</span></td><td><span lang="ko">구독</span></td><td><span lang="ko">대개 구독</span></td></tr>
         </tbody></table></div></details>
+      <details><summary><span lang="ko">카나가 할 수 있는 일은 무엇인가요?</span></summary><div class="a">
+        <p><span lang="ko">일정(보기·새로 넣기·옮기기·고치기·지우기), 미리 알림, 「10분 뒤 알려 줘」 같은 타이머, 매일·평일·매주 되풀이하는 일, 웹 쪽·메일을 지켜보다가 조건이 맞으면 알리기를 해요. 메일은 맥 메일 앱에서 읽기, 답장 안 한 메일 찾기, 답장, 전달, 첨부 저장을 해요. 메시지(아이메시지·문자)는 보내기와 받은 문자 읽기를 해요. 연락처, 메모, 맥 홈 폴더 전체에서 파일 찾기와 열기, 표·문서·발표·PDF·그림 만들기, 웹 찾기와 카나 브라우저로 예약·주문(승인 뒤)도 해요. 음악 틀기·멈추기·소리 크기, 앱 열기, 단축어 실행, 클립보드도 다뤄요. ⌘⇧1을 꾹 누르고 말로 부탁할 수도 있어요. 일은 한 번에 세 개까지 하고, 넷째는 줄을 세웠다가 시작해요.</span></p></div></details>
+      <details><summary><span lang="ko">카나가 하지 않는 일은 무엇인가요?</span></summary><div class="a">
+        <ul>
+          <li><span lang="ko">승인 없이 보내기·지우기·결제하지 않아요.</span></li>
+          <li><span lang="ko">암호·카드 번호를 입력하지 않아요.</span></li>
+          <li><span lang="ko">실행 파일을 열거나 셸 명령을 돌리지 않아요.</span></li>
+          <li><span lang="ko">방해 금지·와이파이 같은 맥 설정을 직접 바꾸지 않아요. 당신이 만든 단축어가 있을 때만 그 단축어로 바꿔요.</span></li>
+          <li><span lang="ko">확인하지 못한 일을 했다고 말하지 않아요.</span></li>
+        </ul></div></details>
+      <details><summary><span lang="ko">맥에서 어떤 허락이 필요한가요?</span></summary><div class="a">
+        <p><span lang="ko">처음부터 다 묻지 않고, 그 일을 처음 할 때만 물어요. 허락이 없으면 「설정 열기」로 맞는 자리를 바로 열어 줘요.</span></p>
+        <ul>
+          <li><span lang="ko">캘린더·미리 알림·연락처·알림.</span></li>
+          <li><span lang="ko">자동화: 메일·메시지·메모·음악을 다룰 때.</span></li>
+          <li><span lang="ko">화면 기록: 「이 화면」을 볼 때.</span></li>
+          <li><span lang="ko">손쉬운 사용: Apple Music 곡을 바로 틀 때.</span></li>
+          <li><span lang="ko">전체 디스크 접근: 받은 문자를 읽거나 메시지가 갔는지 확인할 때.</span></li>
+        </ul></div></details>
       <details><summary><span lang="ko">AI 값은 따로 드나요?</span></summary><div class="a">
-        <p><span lang="ko">네. AI 요금은 카나 값과 별개로, 당신의 Anthropic 계정에서 따로 나가요. 카나는 Anthropic API 키(권장)나 Claude Code 로그인으로 움직여요.</span></p></div></details>
+        <p><span lang="ko">네. AI 값은 카나 값에 들어 있지 않아요. 카나는 이 맥의 Claude Code로 생각해요. Claude Pro·Max 구독이 있으면 그 구독 안에서 쓰고, API 키면 쓴 만큼 당신의 Anthropic 계정에 청구돼요.</span></p></div></details>
       <details><summary><span lang="ko">무료 체험이 있나요?</span></summary><div class="a">
         <p><span lang="ko">없어요. 대신 산 날부터 14일 안에는 이유를 묻지 않고 환불해요. <a href="refund.html" data-keeplang>환불 정책</a></span></p></div></details>
       <details><summary><span lang="ko">어떻게 설치하나요?</span></summary><div class="a">
@@ -565,6 +609,7 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
       <li><a href="privacy.html" data-keeplang><span lang="ko">개인정보 처리방침</span></a></li>
       <li><a href="terms.html" data-keeplang><span lang="ko">이용 약관</span></a></li>
       <li><a lang="ko" href="guides/mac-ai-agent-ko.html">안내 글</a></li>
+      <li><a lang="ko" href="press/ko.html">보도 자료</a></li>
     </ul></div>
     <div><b><span lang="ko">구매</span></b><ul>
       <li><a href="#buy"><span lang="ko">값 보기</span></a></li>
