@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- seo/seo.py 가 만듦 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://heykana.app/ko.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://heykana.app/ko.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heykana.app/"/>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://heykana.app/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://heykana.app/ko.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heykana.app/"/>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://heykana.app/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://heykana.app/ko.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heykana.app/"/>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://heykana.app/story/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://heykana.app/story/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/story/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heykana.app/story/index.en.html"/>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://heykana.app/story/index.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://heykana.app/story/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/story/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://heykana.app/story/index.en.html"/>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://heykana.app/terms.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://heykana.app/privacy.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://heykana.app/refund.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+</urlset>
