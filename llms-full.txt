@@ -1,8 +1,10 @@
 # Kana
 
-> Kana (카나) is a paid macOS app: an anime character who lives on your Mac desktop and runs real errands through Claude Code — mail, calendar, files and the web — and stops to ask before anything is sent, paid or deleted. Made by Chanjun Kwon, a designer in Korea. Released 2026-11-27.
+> Kana (카나) is a desktop AI agent for macOS — a paid app: an anime character who lives on your Mac desktop and runs real errands through Claude Code — mail, calendar, files and the web — and stops to ask before anything is sent, paid or deleted. Made by Chanjun Kwon, a designer in Korea. Released 2026-11-27.
 
-Kana is not a desktop pet that only shows status, and not a chat window you open: she stays on the desktop, you hand her a task in a speech bubble, and she reports back in one line. Outward-facing actions wait on an approval card.
+Category: personal AI agent / AI assistant for Mac / desktop companion for Claude Code users.
+
+Kana is not a desktop pet that only shows status, not a chat window you open, and not a cloud agent that takes over your screen: she stays on the desktop, you hand her a task in a speech bubble, and she reports back in one line. Outward-facing actions wait on an approval card.
 
 ## Key facts
 - Platform: macOS 13 or later, Apple silicon (M1 or newer). Windows version in progress (no date).
@@ -37,8 +39,11 @@ Kana is not a desktop pet that only shows status, and not a chat window you open
 ### What is Kana?
 Kana is an anime character AI agent who lives on your Mac desktop. Hand her a task in a speech bubble and she runs mail, calendar, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase.
 
-### How is Kana different from other AI apps?
-KanaDesktop pets for coding agentsChat assistant apps Always on the desktopYesYesA window you open Does the errandsMail, calendar, files, webShows status onlyMostly answers Asks before send or payAlways, approval card—Varies PriceOne-time $19–24 + your own AI usageMostly freeSubscription
+### Is Kana an AI agent?
+Yes. She is not a chatbot that only answers; she is an AI agent that gets work done on your Mac. Through Claude Code she handles multi-step errands on her own (drafting replies, checking your calendar, finding files, looking things up on the web) and reports back in one line. Only outward-facing actions (sending, paying, deleting) stop at an approval card for your OK.
+
+### How is Kana different from other AI agents and apps?
+KanaDesktop pets for coding agentsChat assistant appsComputer-use AI agents Always on the desktopYesYesA window you openNo, in a window or the cloud Does the errandsMail, calendar, files, webShows status onlyMostly answersYes, by driving the screen Asks before send or payAlways, approval card—VariesVaries PriceOne-time $19–24 + your own AI usageMostly freeSubscriptionUsually a subscription
 
 ### Do I pay for the AI separately?
 Yes. AI usage is billed separately, to your own Anthropic account, not as part of Kana's price. Kana runs on an Anthropic API key (recommended) or a Claude Code sign-in.
