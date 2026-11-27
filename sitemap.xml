@@ -4,21 +4,14 @@
   <url>
     <loc>https://heykana.app/ko.html</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://heykana.app/ko.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://heykana.app/"/>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://heykana.app/en.html</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://heykana.app/ko.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/en.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://heykana.app/"/>
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://heykana.app/</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://heykana.app/ko.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/en.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heykana.app/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://heykana.app/"/>
     <lastmod>2026-11-27</lastmod>
   </url>
