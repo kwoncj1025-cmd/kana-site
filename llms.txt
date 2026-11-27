@@ -1,6 +1,6 @@
 # Kana
 
-> Kana (카나) is a desktop AI agent for macOS — a paid app: an anime character who lives on your Mac desktop and runs real errands through Claude Code — mail, calendar, files and the web — and stops to ask before anything is sent, paid or deleted. Made by Chanjun Kwon, a designer in Korea. Released 2026-11-27.
+> Kana (카나) is a desktop AI agent for macOS — a paid app: an anime character who lives on your Mac desktop and runs real errands through Claude Code — mail, calendar, files and the web — and stops to ask before anything is sent, paid or deleted. Made by YOOANPAPA, a designer in Korea. Released 2026-11-27.
 
 Category: personal AI agent / AI assistant for Mac / desktop companion for Claude Code users.
 
