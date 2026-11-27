@@ -1,4 +1,4 @@
-# kwoncj1025-cmd.github.io — © 2026 Chanjun Kwon. All rights reserved.
+# heykana.app — © 2026 YOOANPAPA. All rights reserved.
 # 이 사이트의 글·그림·코드를 AI 학습에 쓰지 마세요. / Do not use this site's content to train AI.
 # AI 「학습용」 수집기는 막고, 사람이 묻는 질문에 답하려고 읽는 「검색·답변용」 수집기는 허용한다(ChatGPT·Claude·Perplexity 검색에 카나가 나오도록).
 # 이 파일은 seo/seo.py 가 만든다. GitHub Pages 사용자 사이트이므로 저장소 루트(/robots.txt)에 있어야 효력이 있다.

@@ -24,7 +24,6 @@ Kana is not a desktop pet that only shows status, not a chat window you open, an
 
 ## Optional
 - [Full text for AI assistants](https://heykana.app/llms-full.txt)
-- [Chanjun Kwon — portfolio](https://kwoncj1025-cmd.github.io/)
 
 ## How Kana compares
 | | Kana | Desktop pets for coding agents | Chat assistant apps | Screen-control agents |
