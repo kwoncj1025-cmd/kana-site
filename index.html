@@ -376,9 +376,17 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
 .faq summary:focus-visible{outline:3px solid var(--cob);outline-offset:3px;border-radius:30px}
 .faq .a{padding:0 26px 26px;color:#2c2c33;line-height:1.5}
 .faq h2{text-align:center}
+/* 판매 ↔ 이야기 전환 탭(11-27 사용자 A안): 왼쪽 위 고정 알약, 「한국어|EN」과 같은 말투 */
+.ptab{position:fixed;z-index:60;top:66px;left:88px;display:inline-flex;border:2px solid var(--ink);border-radius:24px;background:#fff;overflow:hidden;box-shadow:0 4px 0 var(--ink)}
+.ptab a{padding:11px 18px;font:700 14px/1 var(--sans);color:var(--ink);text-decoration:none}
+.ptab a[aria-current]{background:var(--ink);color:#fff}
+.ptab a:not([aria-current]):hover{background:var(--lime)}
+.ptab a:focus-visible{outline:3px solid var(--cob);outline-offset:-3px}
+@media (max-width:420px){.ptab{left:76px}.ptab a{padding:11px 13px}}
 </style>
 </head>
 <body>
+<nav class="ptab" aria-label="Kana"><a href="#top" aria-current="page"><span lang="ko">카나</span><span lang="en">Kana</span></a><a href="story/" data-storylink><span lang="ko">이야기</span><span lang="en">Story</span></a></nav>
 
 <div class="tick" aria-hidden="true"><div class="tr" id="tick"><span lang="ko">카나 출시</span><span lang="ko">한 번 사면 끝 19달러</span><span lang="ko">맥 바탕화면에 사는 AI 비서</span><span lang="en">Kana is live</span><span lang="en">Pay once $19</span><span lang="en">An AI assistant on your desktop</span></div></div>
 
@@ -567,7 +575,8 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
 <script>
 /* 흐름 띠: 글을 여러 번 이어 붙여 끊김 없이 돈다. 아래 띠도 같은 글 */
 (() => { const t = document.getElementById('tick'), one = t.innerHTML; t.innerHTML = one.repeat(8); document.querySelectorAll('.tr2').forEach(x => x.innerHTML = t.innerHTML); })();
-document.addEventListener('click', e => { const a = e.target.closest('a.story'); if (a) a.href = 'story/?lang=' + document.documentElement.dataset.lang; });
+// 이야기 링크: 보고 있던 언어의 이야기 페이지로(?pick=1 이면 이야기 쪽이 브라우저 언어로 다시 고르지 않음)
+document.addEventListener('click', e => { const a = e.target.closest('a.story, a[data-storylink]'); if (a) a.href = document.documentElement.dataset.lang === 'en' ? 'story/index.en.html?pick=1' : 'story/?pick=1'; });
 if (/[?&]og=1/.test(location.search)) document.documentElement.classList.add('og');
 </script>
 <script src="kana/engine.js"></script>
