@@ -40,6 +40,10 @@ Kana is not a desktop pet that only shows status, not a chat window you open, an
 - Simple questions: about 1.5-2.5 seconds
 
 
+## How Kana compares (honestly)
+- vs Meta Muse, OpenAI Dots, Claude Duet: they work in the cloud or on their own virtual machine, so they keep working away from your Mac; Kana runs only on your Mac while it is awake and has no phone or messenger access yet. Kana is faster on everyday Mac chores, asks before every send/payment/booking/delete (no "allow always"), keeps its notebook on the Mac, and costs $19 once (plus your Claude plan).
+- vs OpenClaw: OpenClaw is free, open source and reachable from 20+ messengers; Kana is a signed Mac app with no setup, no network ports, no third-party skill marketplace and approval on every outward action.
+
 ## What Kana won't do
 - Send, delete or pay without approval
 - Type passwords or card numbers
@@ -62,6 +66,10 @@ Calendars, Reminders, Contacts, Notifications, Automation (Mail, Messages, Notes
 - [AI Agents for Mac in 2026: Three Kinds and How to Choose](https://heykana.app/guides/ai-agent-for-mac.html)
 - [Claude Code Desktop Companions: Status Pets vs. Errand Helpers](https://heykana.app/guides/claude-code-desktop-companions.html)
 - [맥 AI 에이전트 고르는 법: 맡겨도 되는 일과 꼭 확인할 일](https://heykana.app/guides/mac-ai-agent-ko.html)
+- [Kana vs Meta Muse, OpenAI Dots and Claude Duet: Which AI Agent Fits Your Mac?](https://heykana.app/guides/kana-vs-muse-dots-duet.html)
+- [카나 vs 메타 Muse·OpenAI Dots·Claude Duet — 내 맥에 맞는 AI 에이전트는?](https://heykana.app/guides/kana-vs-muse-dots-duet-ko.html)
+- [Kana vs OpenClaw: A Signed Mac App or a Self-Hosted Agent?](https://heykana.app/guides/kana-vs-openclaw.html)
+- [카나 vs OpenClaw — 서명된 맥 앱과 직접 띄우는 에이전트](https://heykana.app/guides/kana-vs-openclaw-ko.html)
 - [How to Tidy Your Mac Downloads Folder in One Sentence](https://heykana.app/guides/tidy-mac-downloads-folder.html)
 - [맥 다운로드 폴더, 말 한마디로 한 번에 정리하는 법](https://heykana.app/guides/tidy-mac-downloads-folder-ko.html)
 - [Let an AI Agent Compare Hotel Prices for You (With Real Links)](https://heykana.app/guides/compare-hotel-prices-with-ai.html)

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko" data-lang="ko" data-static="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noai, noimageai">
+<meta name="copyright" content="© 2026 YOOANPAPA. All rights reserved.">
+<meta name="author" content="YOOANPAPA">
+<!-- seo/guides.py 가 만듦. 손으로 고치지 말 것 -->
+<title>카나 vs OpenClaw — 서명된 맥 앱과 직접 띄우는 에이전트</title>
+<meta name="description" content="OpenClaw 는 아주 인기 있는 오픈소스 개인 에이전트, 카나는 서명된 맥 앱이에요. 각자 잘하는 것을 출처와 함께, 누구에게 무엇이 맞는지 정리했어요.">
+<link rel="canonical" href="https://heykana.app/guides/kana-vs-openclaw-ko.html">
+<link rel="alternate" hreflang="en" href="https://heykana.app/guides/kana-vs-openclaw.html">
+<link rel="alternate" hreflang="ko" href="https://heykana.app/guides/kana-vs-openclaw-ko.html">
+<link rel="alternate" hreflang="x-default" href="https://heykana.app/guides/kana-vs-openclaw.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kana">
+<meta property="og:title" content="카나 vs OpenClaw — 서명된 맥 앱과 직접 띄우는 에이전트">
+<meta property="og:description" content="OpenClaw 는 아주 인기 있는 오픈소스 개인 에이전트, 카나는 서명된 맥 앱이에요. 각자 잘하는 것을 출처와 함께, 누구에게 무엇이 맞는지 정리했어요.">
+<meta property="og:url" content="https://heykana.app/guides/kana-vs-openclaw-ko.html">
+<meta property="og:image" content="https://heykana.app/img/og.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://heykana.app/#yooanpapa",
+   "name": "YOOANPAPA",
+   "jobTitle": "Designer"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://heykana.app/guides/kana-vs-openclaw-ko.html#article",
+   "headline": "카나 vs OpenClaw — 서명된 맥 앱과 직접 띄우는 에이전트",
+   "description": "OpenClaw 는 아주 인기 있는 오픈소스 개인 에이전트, 카나는 서명된 맥 앱이에요. 각자 잘하는 것을 출처와 함께, 누구에게 무엇이 맞는지 정리했어요.",
+   "inLanguage": "ko",
+   "url": "https://heykana.app/guides/kana-vs-openclaw-ko.html",
+   "image": "https://heykana.app/img/og.jpg",
+   "author": {
+    "@id": "https://heykana.app/#yooanpapa"
+   },
+   "publisher": {
+    "@id": "https://heykana.app/#yooanpapa"
+   },
+   "datePublished": "2026-11-27",
+   "dateModified": "2026-11-27",
+   "about": {
+    "@id": "https://heykana.app/#app"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Kana",
+     "item": "https://heykana.app/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "비교",
+     "item": "https://heykana.app/guides/kana-vs-openclaw-ko.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heykana.app/guides/kana-vs-openclaw-ko.html#faq",
+   "inLanguage": "ko",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "카나는 OpenClaw 로 만들었나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아니요. 카나는 따로 만든 네이티브 맥 앱이에요. 이 맥에서 도는 Claude Code로 생각하고, OpenClaw 코드를 쓰지 않아요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "OpenClaw 처럼 폰으로 카나에게 문자할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아직은 안 돼요. 맥 바탕화면의 말풍선으로 말해요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "카나가 OpenClaw 보다 안전한가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "만든 방식이 달라요. 카나는 네트워크 포트를 열지 않고, 남이 만든 스킬 장터가 없고, 보내기·결제·예약·삭제 전에 매번 물어요. OpenClaw 도 안전하게 설정할 수 있지만, 보안은 어떻게 띄우고 설정하느냐에 달려 있어요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "어느 쪽이 더 싸요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "OpenClaw 는 무료지만 모델 사용료와 기기 값은 따로 들어요. 카나는 한 번 19달러이고, 내 Claude Pro·Max 구독이나 API 키를 써요."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Dela+Gothic+One&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../site.css">
+<style>
+.doc .body a{color:var(--cob)}
+.doc .lead{margin:22px 0 8px;font-size:19px;line-height:1.55}
+.doc ol{padding-left:1.3em;margin:0}.doc ol li{margin:10px 0}
+.doc p{line-height:1.7}.doc li{line-height:1.65}
+.gcta{margin:48px 0 8px;padding:26px 24px;background:var(--lime);border:2px solid var(--ink);border-radius:20px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between}
+.gcta p{margin:0;font-weight:700}
+.gcta a{display:inline-flex;align-items:center;padding:13px 22px;border-radius:26px;background:var(--ink);color:#fff!important;text-decoration:none;font-weight:700}
+.gmore{margin-top:36px;font-size:var(--t-small)}.gmore ul{margin-top:8px}
+.gfoot{max-width:760px;margin:0 auto;padding:0 var(--gut) 48px;color:var(--mute);font-size:13px}
+.tw{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+.doc table.vs{display:table;border-collapse:collapse;min-width:600px;width:100%;margin:0;font-size:15px;line-height:1.45}
+.doc table.vs tbody{display:table-row-group}.doc table.vs tr{display:table-row}
+.doc table.vs th,.doc table.vs td{display:table-cell;border:1.5px solid var(--ink);padding:10px 12px;text-align:left;vertical-align:top;font-weight:400;background:#fff}
+.doc table.vs tr:first-child th{background:var(--ink);color:#fff;font-weight:700}.doc table.vs tr:first-child th:nth-child(2){background:var(--cob)}
+.doc table.vs td:nth-child(2){background:#f4f2fd;font-weight:600}.doc table.vs tr>th:first-child{font-weight:700;width:22%}
+.doc figure{margin:26px 0}.doc figure img{display:block;width:100%;height:auto;border:2px solid var(--ink);border-radius:16px}
+.doc figcaption{margin-top:8px;font-size:var(--t-small);color:var(--mute)}
+.gfaq dt{margin-top:18px;font-weight:700}.gfaq dd{margin:6px 0 0;line-height:1.65}
+</style>
+</head>
+<body>
+<main class="pan doc">
+<nav class="nav solid"><a class="logo" href="../ko.html" aria-label="Kana">仮</a></nav>
+<article class="body">
+  <h1>카나 vs OpenClaw 비교</h1>
+  <p class="date">2026년 11월 28일 · YOOANPAPA</p>
+  <p class="lead">OpenClaw 는 아주 인기 있는 오픈소스 개인 에이전트, 카나는 서명된 맥 앱이에요. 각자 잘하는 것을 출처와 함께, 누구에게 무엇이 맞는지 정리했어요.</p>
+
+<p><a href="https://github.com/openclaw/openclaw" rel="nofollow noopener" target="_blank">OpenClaw</a>(옛 이름 Clawdbot)는 GitHub 별이 약 39만 5천 개인 오픈소스 개인 에이전트이고, 커뮤니티도 커요. 카나는 작은 유료 맥 앱이에요. 「귀찮은 일 좀 맡아 줘」라는 같은 바람을 아주 다른 방식으로 풀어요. 출처는 2026년 11월 28일에 확인했어요.</p>
+<h2>한눈에</h2>
+<div class="tw"><table class="vs">
+<tr><th></th><th>카나</th><th>OpenClaw</th></tr>
+<tr><th>무엇</th><td>서명·공증된 맥 앱, 바탕화면 캐릭터</td><td>직접 설치해 돌리는 오픈소스 에이전트(MIT 라이선스)</td></tr>
+<tr><th>설치</th><td>DMG 열고 응용 프로그램으로 끌기, Claude Code 로그인</td><td>내 컴퓨터에 직접 설치·설정·운영</td></tr>
+<tr><th>말 거는 곳</th><td>맥 바탕화면 말풍선</td><td>Discord·iMessage·Slack·Teams·Telegram·WhatsApp 「외 20곳 넘게」</td></tr>
+<tr><th>AI 모델</th><td>이 맥의 Claude Code(Claude Pro·Max 구독이나 API 키)</td><td>원하는 모델·키</td></tr>
+<tr><th>스스로 깨어나기</th><td>맥이 깨어 있을 때 아침 브리핑·메일 지켜보기, 바뀐 게 없으면 조용</td><td>기본 30분마다 하트비트, HEARTBEAT.md 확인 목록대로</td></tr>
+<tr><th>행동 실행</th><td>보내기·결제·예약·삭제는 매번 카드에서 멈춤</td><td>「샌드박스를 설정하지 않으면 메인 세션의 도구는 호스트에서 실행」</td></tr>
+<tr><th>추가 기능</th><td>내장 스킬만, 장터 없음</td><td>스킬 장터(ClawHub)</td></tr>
+<tr><th>값</th><td>한 번 19달러</td><td>무료(모델 사용료·기기 값은 따로)</td></tr>
+</table></div>
+<p class="small">출처: <a href="https://github.com/openclaw/openclaw" rel="nofollow noopener" target="_blank">OpenClaw README</a>, <a href="https://docs.openclaw.ai/id/gateway/heartbeat" rel="nofollow noopener" target="_blank">하트비트 문서</a></p>
+<h2>OpenClaw 가 앞선 곳</h2>
+<ul>
+<li><b>어디서든 말 걸기.</b> 「이미 쓰는 채널에서 만난다」가 핵심이에요(<a href="https://github.com/openclaw/openclaw" rel="nofollow noopener" target="_blank">README</a>). 폰으로 문자하면 내 컴퓨터가 일해요. 너무 인기라 Kaspersky 는 「미국 몇몇 매장에서 맥 미니 품귀를 일으켰다」고 썼어요(<a href="https://www.kaspersky.com/blog/openclaw-vulnerabilities-exposed/55263/" rel="nofollow noopener" target="_blank">Kaspersky</a>).</li>
+<li><b>자유.</b> 오픈소스라 모델을 마음대로 고르고, 코드를 다 읽고 고칠 수 있어요.</li>
+<li><b>검증된 하트비트.</b> 기본 30분마다 깨어나 확인 목록대로 움직여요(<a href="https://docs.openclaw.ai/id/gateway/heartbeat" rel="nofollow noopener" target="_blank">문서</a>). 한 레딧 사용자는 「크론은 정말 믿을 수 있다」고 했어요(<a href="https://kilo.ai/articles/openclaw-vs-hermes-what-reddit-says" rel="nofollow noopener" target="_blank">Kilo 의 레딧 모음</a>).</li>
+<li><b>무료.</b> 라이선스 값이 없어요.</li>
+</ul>
+<h2>카나가 앞선 곳</h2>
+<ul>
+<li><b>설치에 주말을 안 써요.</b> 서명된 DMG 하나예요. 포트·Docker·터미널이 필요 없어요. Kilo 가 모은 레딧 글에는 「기대대로 돌지 않아 포기했다」, 「업데이트마다 버그가 늘었다」는 말이 있어요(<a href="https://kilo.ai/articles/openclaw-vs-hermes-what-reddit-says" rel="nofollow noopener" target="_blank">Kilo</a>).</li>
+<li><b>다칠 길이 적어요.</b> 2026년 초 Kaspersky 는 일주일쯤 사이 올라온 악성 플러그인 230개 넘게, 인증 없이 인터넷에서 열리는 OpenClaw 설치본 천 개 가까이를 찾았어요(<a href="https://www.kaspersky.com/blog/openclaw-vulnerabilities-exposed/55263/" rel="nofollow noopener" target="_blank">Kaspersky 2026-02-10</a>). 카나는 네트워크 포트를 열지 않고, 남이 만든 스킬 장터가 없고, 맥 밖으로 나가는 일은 카드에서 멈춰요.</li>
+<li><b>비용이 예측돼요.</b> 한 레딧 사용자는 하루 평균 131달러, 모두 5천 달러 가까이 썼다고 했어요(<a href="https://kilo.ai/articles/openclaw-vs-hermes-what-reddit-says" rel="nofollow noopener" target="_blank">Kilo</a>). 카나는 한 번 19달러에 내 Claude 구독을 쓰고, 바뀐 게 없으면 조용히 있어요.</li>
+<li><b>맥 잔일이 빨라요.</b> 2026년 11월 28일 출시판 실측: 간단한 질문 약 1.5~2.5초, 다운로드 파일 142개 정리 약 5초(쪽지 1장).</li>
+<li><b>얼굴이 있어요.</b> 손그림 캐릭터가 바탕화면에서 일하는 중·다 했어요를 보여 줘요.</li>
+</ul>
+<h2>카나가 아직 못 하는 것</h2>
+<ul>
+<li>메신저·폰으로 말 걸기는 아직 없어요. OpenClaw 의 가장 큰 장점이에요.</li>
+<li>맥이 깨어 있을 때만 일해요.</li>
+<li>Claude 만, 맥만(Apple 실리콘, macOS 13 이상) 돼요.</li>
+<li>오픈소스가 아니에요.</li>
+</ul>
+<h2>무엇을 고를까</h2>
+<p>만지는 걸 좋아하고, 어디서든 문자로 시키고 싶고, 직접 띄운 환경의 보안을 챙길 수 있다면 OpenClaw 가 좋아요. 열자마자 되고, 맥 바탕화면에 있고, 꾹 누르기 전엔 보내지도 결제하지도 않는 비서를 원하면 <a href="../ko.html">카나</a>를 고르세요.</p>
+
+<h2>자주 묻는 것</h2>
+<dl class="gfaq"><dt>카나는 OpenClaw 로 만들었나요?</dt><dd>아니요. 카나는 따로 만든 네이티브 맥 앱이에요. 이 맥에서 도는 Claude Code로 생각하고, OpenClaw 코드를 쓰지 않아요.</dd><dt>OpenClaw 처럼 폰으로 카나에게 문자할 수 있나요?</dt><dd>아직은 안 돼요. 맥 바탕화면의 말풍선으로 말해요.</dd><dt>카나가 OpenClaw 보다 안전한가요?</dt><dd>만든 방식이 달라요. 카나는 네트워크 포트를 열지 않고, 남이 만든 스킬 장터가 없고, 보내기·결제·예약·삭제 전에 매번 물어요. OpenClaw 도 안전하게 설정할 수 있지만, 보안은 어떻게 띄우고 설정하느냐에 달려 있어요.</dd><dt>어느 쪽이 더 싸요?</dt><dd>OpenClaw 는 무료지만 모델 사용료와 기기 값은 따로 들어요. 카나는 한 번 19달러이고, 내 Claude Pro·Max 구독이나 API 키를 써요.</dd></dl>
+  <div class="gcta"><p>귀찮은 맥 일은 말로 맡기세요, 카나</p><a href="../ko.html?utm_source=guide&utm_medium=content&utm_campaign=kana-vs-openclaw-ko">카나 보러 가기 &rarr;</a></div>
+  <div class="gmore"><b>다른 글</b><ul><li><a href="mac-ai-agent-ko.html">맥 AI 에이전트 고르는 법: 맡겨도 되는 일과 꼭 확인할 일</a></li><li><a href="kana-vs-muse-dots-duet-ko.html">카나 vs 메타 Muse·OpenAI Dots·Claude Duet — 내 맥에 맞는 AI 에이전트는?</a></li><li><a href="tidy-mac-downloads-folder-ko.html">맥 다운로드 폴더, 말 한마디로 한 번에 정리하는 법</a></li><li><a href="compare-hotel-prices-with-ai-ko.html">호텔 값 비교, AI 에이전트에게 맡기기 — 출처 링크까지</a></li><li><a href="receipt-photo-to-excel-ko.html">영수증 사진을 엑셀로 — 맥에서 손으로 안 치고 표 만들기</a></li></ul></div>
+</article>
+</main>
+<p class="gfoot">© 2026 YOOANPAPA. Kana is an independent product, not affiliated with Anthropic. Claude is a trademark of Anthropic.</p>
+</body>
+</html>
