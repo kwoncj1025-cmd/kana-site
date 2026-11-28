@@ -97,6 +97,7 @@
 .doc table.vs tr:first-child th{background:var(--ink);color:#fff;font-weight:700}.doc table.vs tr:first-child th:nth-child(2){background:var(--cob)}
 .doc table.vs td:nth-child(2){background:#f4f2fd;font-weight:600}.doc table.vs tr>th:first-child{font-weight:700;width:22%}
 .doc figure{margin:26px 0}.doc figure img{display:block;width:100%;height:auto;border:2px solid var(--ink);border-radius:16px}
+.doc figure.tall img{max-width:420px;margin:0 auto}.doc figure.tall figcaption{text-align:center}
 .doc figcaption{margin-top:8px;font-size:var(--t-small);color:var(--mute)}
 .gfaq dt{margin-top:18px;font-weight:700}.gfaq dd{margin:6px 0 0;line-height:1.65}
 </style>
@@ -114,9 +115,11 @@
 <ol>
 <li><b>Drag the receipt photo onto Kana</b> (a screenshot or a photo from your phone both work).</li>
 <li>Say <b>“Put this receipt in a spreadsheet.”</b></li>
-<li>Kana reads the items, prices, date and store, and saves an Excel file named for the month.</li>
-<li>The total is a real <b>=SUM</b> formula, and Kana checks it against the total printed on the receipt before saying she is done.</li>
+<li>Kana reads the items, prices, date and store, and saves an Excel file (for example <b>receipt_2026-11-27.xlsx</b>).</li>
+<li>The total is a <b>=SUM</b> formula, and Kana checks it against the total printed on the receipt before saying she is done.</li>
 </ol>
+<figure><img src="img/receipt-before-after.webp" width="1720" height="900" alt="A Corner Mart receipt photo next to Kana's answer: the spreadsheet is ready with 5 items, the total is $28.92 and matches the receipt, with subtotal $27.03 as a SUM formula and tax $1.89" loading="lazy"><figcaption>The receipt photo, and Kana’s answer.</figcaption></figure>
+<figure><img src="img/receipt-excel.webp" width="1100" height="312" alt="The Excel file Kana made: Date, Store, Item, Amount, Currency, Payment and Source columns, five items, subtotal, tax and a total of $28.92" loading="lazy"><figcaption>The spreadsheet she made: one row per item, then subtotal, tax and total.</figcaption></figure>
 <h2>Real numbers</h2>
 <p>Measured on the November 28, 2026 release: a 4-item receipt became a spreadsheet in about <b>15–29 seconds</b>, with <b>no approval cards</b>. In both runs the formula total matched the printed total.</p>
 <h2>Then what?</h2>

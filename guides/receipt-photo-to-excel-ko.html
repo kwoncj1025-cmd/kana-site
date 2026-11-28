@@ -97,6 +97,7 @@
 .doc table.vs tr:first-child th{background:var(--ink);color:#fff;font-weight:700}.doc table.vs tr:first-child th:nth-child(2){background:var(--cob)}
 .doc table.vs td:nth-child(2){background:#f4f2fd;font-weight:600}.doc table.vs tr>th:first-child{font-weight:700;width:22%}
 .doc figure{margin:26px 0}.doc figure img{display:block;width:100%;height:auto;border:2px solid var(--ink);border-radius:16px}
+.doc figure.tall img{max-width:420px;margin:0 auto}.doc figure.tall figcaption{text-align:center}
 .doc figcaption{margin-top:8px;font-size:var(--t-small);color:var(--mute)}
 .gfaq dt{margin-top:18px;font-weight:700}.gfaq dd{margin:6px 0 0;line-height:1.65}
 </style>
@@ -115,8 +116,10 @@
 <li><b>영수증 사진을 카나에게 끌어다 놓아요</b>(스크린샷도, 폰에서 찍은 사진도 돼요).</li>
 <li><b>「이 영수증 표로 만들어 줘」</b>라고 말해요.</li>
 <li>카나가 품목·값·날짜·가게를 읽어서 달 이름이 붙은 엑셀 파일, 예를 들어 <b>경비_2026-11.xlsx</b> 로 저장해요.</li>
-<li>합계는 진짜 <b>=SUM</b> 수식이고, 카나가 영수증에 찍힌 합계와 맞는지 확인한 뒤에 끝났다고 말해요.</li>
+<li>합계는 <b>=SUM</b> 수식이고, 카나가 영수증에 찍힌 합계와 맞는지 확인한 뒤에 끝났다고 말해요.</li>
 </ol>
+<figure><img src="img/receipt-before-after-ko.webp" width="1720" height="900" alt="골목마트 영수증 사진과 카나의 답: 영수증을 엑셀 표로 만들었고 품목 다섯 개 합계 27,470원이 영수증 합계와 같음" loading="lazy"><figcaption>영수증 사진과, 카나의 답.</figcaption></figure>
+<figure><img src="img/receipt-excel-ko.webp" width="900" height="354" alt="카나가 만든 엑셀: 날짜·업체·품목·금액·통화·결제 열, 품목 5줄과 합계 27,470" loading="lazy"><figcaption>카나가 만든 표: 품목마다 한 줄, 맨 아래 합계.</figcaption></figure>
 <h2>실제 숫자</h2>
 <p>2026년 11월 28일 출시판 실측: 품목 4줄짜리 영수증이 약 <b>15~29초</b>에 엑셀이 됐고, <b>승인 쪽지 0장</b>이었어요. 두 번 다 수식 합계가 영수증 합계와 같았어요.</p>
 <h2>그다음엔</h2>
