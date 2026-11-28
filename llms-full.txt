@@ -66,7 +66,7 @@ Calendars, Reminders, Contacts, Notifications, Automation (Mail, Messages, Notes
 ## FAQ
 
 ### What is Kana?
-Kana is an anime character AI agent who lives on your Mac desktop. Hand her a task in a speech bubble and she runs mail, messages, calendar, reminders, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase.
+Kana is an AI agent for Mac that takes everyday chores off your hands. She is an anime character on your desktop: hand her a task in a speech bubble and she runs mail, messages, calendar, reminders, file and web errands through Claude Code, then reports back in one line. Before sending, paying or deleting anything, she always stops at an approval card. For macOS (Apple silicon, macOS 13 or later), one-time purchase.
 
 ### Is Kana an AI agent?
 Yes. She is not a chatbot that only answers; she is an AI agent that gets work done on your Mac. Through Claude Code she handles multi-step errands on her own (drafting replies, checking your calendar, finding files, looking things up on the web) and reports back in one line. Only outward-facing actions (sending, paying, deleting) stop at an approval card for your OK.
