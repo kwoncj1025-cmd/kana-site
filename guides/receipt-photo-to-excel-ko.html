@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko" data-lang="ko" data-static="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noai, noimageai">
+<meta name="copyright" content="© 2026 YOOANPAPA. All rights reserved.">
+<meta name="author" content="YOOANPAPA">
+<!-- seo/guides.py 가 만듦. 손으로 고치지 말 것 -->
+<title>영수증 사진을 엑셀로 — 맥에서 손으로 안 치고 표 만들기</title>
+<meta name="description" content="영수증을 한 줄씩 엑셀에 치는 건 다들 미루는 일이에요. 카나가 영수증 사진을 품목·날짜·가게·검산한 합계가 든 엑셀 파일로 30초 안에 바꾸는 법.">
+<link rel="canonical" href="https://heykana.app/guides/receipt-photo-to-excel-ko.html">
+<link rel="alternate" hreflang="en" href="https://heykana.app/guides/receipt-photo-to-excel.html">
+<link rel="alternate" hreflang="ko" href="https://heykana.app/guides/receipt-photo-to-excel-ko.html">
+<link rel="alternate" hreflang="x-default" href="https://heykana.app/guides/receipt-photo-to-excel.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kana">
+<meta property="og:title" content="영수증 사진을 엑셀로 — 맥에서 손으로 안 치고 표 만들기">
+<meta property="og:description" content="영수증을 한 줄씩 엑셀에 치는 건 다들 미루는 일이에요. 카나가 영수증 사진을 품목·날짜·가게·검산한 합계가 든 엑셀 파일로 30초 안에 바꾸는 법.">
+<meta property="og:url" content="https://heykana.app/guides/receipt-photo-to-excel-ko.html">
+<meta property="og:image" content="https://heykana.app/img/og.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://heykana.app/#yooanpapa",
+   "name": "YOOANPAPA",
+   "jobTitle": "Designer"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://heykana.app/guides/receipt-photo-to-excel-ko.html#article",
+   "headline": "영수증 사진을 엑셀로 — 맥에서 손으로 안 치고 표 만들기",
+   "description": "영수증을 한 줄씩 엑셀에 치는 건 다들 미루는 일이에요. 카나가 영수증 사진을 품목·날짜·가게·검산한 합계가 든 엑셀 파일로 30초 안에 바꾸는 법.",
+   "inLanguage": "ko",
+   "url": "https://heykana.app/guides/receipt-photo-to-excel-ko.html",
+   "image": "https://heykana.app/img/og.jpg",
+   "author": {
+    "@id": "https://heykana.app/#yooanpapa"
+   },
+   "publisher": {
+    "@id": "https://heykana.app/#yooanpapa"
+   },
+   "datePublished": "2026-11-27",
+   "dateModified": "2026-11-27",
+   "about": {
+    "@id": "https://heykana.app/#app"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Kana",
+     "item": "https://heykana.app/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "안내",
+     "item": "https://heykana.app/guides/receipt-photo-to-excel-ko.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Dela+Gothic+One&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../site.css">
+<style>
+.doc .body a{color:var(--cob)}
+.doc .lead{margin:22px 0 8px;font-size:19px;line-height:1.55}
+.doc ol{padding-left:1.3em;margin:0}.doc ol li{margin:10px 0}
+.doc p{line-height:1.7}.doc li{line-height:1.65}
+.gcta{margin:48px 0 8px;padding:26px 24px;background:var(--lime);border:2px solid var(--ink);border-radius:20px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between}
+.gcta p{margin:0;font-weight:700}
+.gcta a{display:inline-flex;align-items:center;padding:13px 22px;border-radius:26px;background:var(--ink);color:#fff!important;text-decoration:none;font-weight:700}
+.gmore{margin-top:36px;font-size:var(--t-small)}.gmore ul{margin-top:8px}
+.gfoot{max-width:760px;margin:0 auto;padding:0 var(--gut) 48px;color:var(--mute);font-size:13px}
+.tw{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+.doc table.vs{display:table;border-collapse:collapse;min-width:600px;width:100%;margin:0;font-size:15px;line-height:1.45}
+.doc table.vs tbody{display:table-row-group}.doc table.vs tr{display:table-row}
+.doc table.vs th,.doc table.vs td{display:table-cell;border:1.5px solid var(--ink);padding:10px 12px;text-align:left;vertical-align:top;font-weight:400;background:#fff}
+.doc table.vs tr:first-child th{background:var(--ink);color:#fff;font-weight:700}.doc table.vs tr:first-child th:nth-child(2){background:var(--cob)}
+.doc table.vs td:nth-child(2){background:#f4f2fd;font-weight:600}.doc table.vs tr>th:first-child{font-weight:700;width:22%}
+.doc figure{margin:26px 0}.doc figure img{display:block;width:100%;height:auto;border:2px solid var(--ink);border-radius:16px}
+.doc figcaption{margin-top:8px;font-size:var(--t-small);color:var(--mute)}
+.gfaq dt{margin-top:18px;font-weight:700}.gfaq dd{margin:6px 0 0;line-height:1.65}
+</style>
+</head>
+<body>
+<main class="pan doc">
+<nav class="nav solid"><a class="logo" href="../ko.html" aria-label="Kana">仮</a></nav>
+<article class="body">
+  <h1>영수증 사진을 엑셀 표로</h1>
+  <p class="date">2026년 11월 28일 · YOOANPAPA</p>
+  <p class="lead">영수증을 한 줄씩 엑셀에 치는 건 다들 미루는 일이에요. 카나가 영수증 사진을 품목·날짜·가게·검산한 합계가 든 엑셀 파일로 30초 안에 바꾸는 법.</p>
+
+<p>경비 정리가 밀리는 건 영수증 줄을 하나하나 엑셀에 옮겨 치는 게 지루해서예요. 사진을 표로 바꾸는 앱도 있지만, 내보내고 열 맞추고 합계까지 넣는 건 또 내 몫이에요.</p>
+<h2>카나와 함께</h2>
+<ol>
+<li><b>영수증 사진을 카나에게 끌어다 놓아요</b>(스크린샷도, 폰에서 찍은 사진도 돼요).</li>
+<li><b>「이 영수증 표로 만들어 줘」</b>라고 말해요.</li>
+<li>카나가 품목·값·날짜·가게를 읽어서 달 이름이 붙은 엑셀 파일, 예를 들어 <b>경비_2026-11.xlsx</b> 로 저장해요.</li>
+<li>합계는 진짜 <b>=SUM</b> 수식이고, 카나가 영수증에 찍힌 합계와 맞는지 확인한 뒤에 끝났다고 말해요.</li>
+</ol>
+<h2>실제 숫자</h2>
+<p>2026년 11월 28일 출시판 실측: 품목 4줄짜리 영수증이 약 <b>15~29초</b>에 엑셀이 됐고, <b>승인 쪽지 0장</b>이었어요. 두 번 다 수식 합계가 영수증 합계와 같았어요.</p>
+<h2>그다음엔</h2>
+<ul>
+<li><b>「보내기용 PDF로」</b> 하면 글꼴이 박힌 한 쪽 PDF를 만들어요.</li>
+<li>「아까 그거 다시」라고 해도 같은 파일을 또 만들지 않고 「표는 이미 있어요」라고 말해요.</li>
+<li>세무사에게 파일을 보내는 건 「보내기」라서 승인 카드에서 먼저 멈춰요.</li>
+</ul>
+<h2>알아 두면 좋은 것</h2>
+<ul>
+<li>흐리거나 구겨진 영수증은 잘못 읽을 수 있어요. 합계를 맞춰 보니 알아채기 쉽지만, 품목은 한 번 훑어보세요.</li>
+<li>사진 앱 안의 사진은 바로 못 열어요. 사진을 카나에게 끌어다 놓아 주세요.</li>
+</ul>
+
+  <div class="gcta"><p>귀찮은 맥 일은 말로 맡기세요, 카나</p><a href="../ko.html?utm_source=guide&utm_medium=content&utm_campaign=receipt-photo-to-excel-ko">카나 보러 가기 &rarr;</a></div>
+  <div class="gmore"><b>다른 글</b><ul><li><a href="mac-ai-agent-ko.html">맥 AI 에이전트 고르는 법: 맡겨도 되는 일과 꼭 확인할 일</a></li><li><a href="tidy-mac-downloads-folder-ko.html">맥 다운로드 폴더, 말 한마디로 한 번에 정리하는 법</a></li><li><a href="compare-hotel-prices-with-ai-ko.html">호텔 값 비교, AI 에이전트에게 맡기기 — 출처 링크까지</a></li></ul></div>
+</article>
+</main>
+<p class="gfoot">© 2026 YOOANPAPA. Kana is an independent product, not affiliated with Anthropic. Claude is a trademark of Anthropic.</p>
+</body>
+</html>

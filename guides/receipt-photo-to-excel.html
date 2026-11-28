@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-static="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noai, noimageai">
+<meta name="copyright" content="© 2026 YOOANPAPA. All rights reserved.">
+<meta name="author" content="YOOANPAPA">
+<!-- seo/guides.py 가 만듦. 손으로 고치지 말 것 -->
+<title>Turn a Receipt Photo Into an Excel Spreadsheet on Your Mac</title>
+<meta name="description" content="Typing receipts into a spreadsheet is the chore nobody does. Here is how Kana turns a receipt photo into an Excel file with items, date, store and a checked total in under 30 seconds.">
+<link rel="canonical" href="https://heykana.app/guides/receipt-photo-to-excel.html">
+<link rel="alternate" hreflang="en" href="https://heykana.app/guides/receipt-photo-to-excel.html">
+<link rel="alternate" hreflang="ko" href="https://heykana.app/guides/receipt-photo-to-excel-ko.html">
+<link rel="alternate" hreflang="x-default" href="https://heykana.app/guides/receipt-photo-to-excel.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kana">
+<meta property="og:title" content="Turn a Receipt Photo Into an Excel Spreadsheet on Your Mac">
+<meta property="og:description" content="Typing receipts into a spreadsheet is the chore nobody does. Here is how Kana turns a receipt photo into an Excel file with items, date, store and a checked total in under 30 seconds.">
+<meta property="og:url" content="https://heykana.app/guides/receipt-photo-to-excel.html">
+<meta property="og:image" content="https://heykana.app/img/og.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://heykana.app/#yooanpapa",
+   "name": "YOOANPAPA",
+   "jobTitle": "Designer"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://heykana.app/guides/receipt-photo-to-excel.html#article",
+   "headline": "Turn a Receipt Photo Into an Excel Spreadsheet on Your Mac",
+   "description": "Typing receipts into a spreadsheet is the chore nobody does. Here is how Kana turns a receipt photo into an Excel file with items, date, store and a checked total in under 30 seconds.",
+   "inLanguage": "en",
+   "url": "https://heykana.app/guides/receipt-photo-to-excel.html",
+   "image": "https://heykana.app/img/og.jpg",
+   "author": {
+    "@id": "https://heykana.app/#yooanpapa"
+   },
+   "publisher": {
+    "@id": "https://heykana.app/#yooanpapa"
+   },
+   "datePublished": "2026-11-27",
+   "dateModified": "2026-11-27",
+   "about": {
+    "@id": "https://heykana.app/#app"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Kana",
+     "item": "https://heykana.app/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Guides",
+     "item": "https://heykana.app/guides/receipt-photo-to-excel.html"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Dela+Gothic+One&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../site.css">
+<style>
+.doc .body a{color:var(--cob)}
+.doc .lead{margin:22px 0 8px;font-size:19px;line-height:1.55}
+.doc ol{padding-left:1.3em;margin:0}.doc ol li{margin:10px 0}
+.doc p{line-height:1.7}.doc li{line-height:1.65}
+.gcta{margin:48px 0 8px;padding:26px 24px;background:var(--lime);border:2px solid var(--ink);border-radius:20px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between}
+.gcta p{margin:0;font-weight:700}
+.gcta a{display:inline-flex;align-items:center;padding:13px 22px;border-radius:26px;background:var(--ink);color:#fff!important;text-decoration:none;font-weight:700}
+.gmore{margin-top:36px;font-size:var(--t-small)}.gmore ul{margin-top:8px}
+.gfoot{max-width:760px;margin:0 auto;padding:0 var(--gut) 48px;color:var(--mute);font-size:13px}
+.tw{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+.doc table.vs{display:table;border-collapse:collapse;min-width:600px;width:100%;margin:0;font-size:15px;line-height:1.45}
+.doc table.vs tbody{display:table-row-group}.doc table.vs tr{display:table-row}
+.doc table.vs th,.doc table.vs td{display:table-cell;border:1.5px solid var(--ink);padding:10px 12px;text-align:left;vertical-align:top;font-weight:400;background:#fff}
+.doc table.vs tr:first-child th{background:var(--ink);color:#fff;font-weight:700}.doc table.vs tr:first-child th:nth-child(2){background:var(--cob)}
+.doc table.vs td:nth-child(2){background:#f4f2fd;font-weight:600}.doc table.vs tr>th:first-child{font-weight:700;width:22%}
+.doc figure{margin:26px 0}.doc figure img{display:block;width:100%;height:auto;border:2px solid var(--ink);border-radius:16px}
+.doc figcaption{margin-top:8px;font-size:var(--t-small);color:var(--mute)}
+.gfaq dt{margin-top:18px;font-weight:700}.gfaq dd{margin:6px 0 0;line-height:1.65}
+</style>
+</head>
+<body>
+<main class="pan doc">
+<nav class="nav solid"><a class="logo" href="../" aria-label="Kana">仮</a></nav>
+<article class="body">
+  <h1>Receipt photo to Excel, without typing</h1>
+  <p class="date">November 28, 2026 · YOOANPAPA</p>
+  <p class="lead">Typing receipts into a spreadsheet is the chore nobody does. Here is how Kana turns a receipt photo into an Excel file with items, date, store and a checked total in under 30 seconds.</p>
+
+<p>Expense reports pile up because typing each receipt line into a spreadsheet is dull. Photo-to-table apps exist, but you still have to export, fix columns and add a total.</p>
+<h2>With Kana</h2>
+<ol>
+<li><b>Drag the receipt photo onto Kana</b> (a screenshot or a photo from your phone both work).</li>
+<li>Say <b>“Put this receipt in a spreadsheet.”</b></li>
+<li>Kana reads the items, prices, date and store, and saves an Excel file named for the month.</li>
+<li>The total is a real <b>=SUM</b> formula, and Kana checks it against the total printed on the receipt before saying she is done.</li>
+</ol>
+<h2>Real numbers</h2>
+<p>Measured on the November 28, 2026 release: a 4-item receipt became a spreadsheet in about <b>15–29 seconds</b>, with <b>no approval cards</b>. In both runs the formula total matched the printed total.</p>
+<h2>Then what?</h2>
+<ul>
+<li>Say <b>“Make it a PDF I can send”</b> for a one-page PDF with fonts embedded.</li>
+<li>Asking again (“do that again”) won't make a duplicate file; Kana tells you the table already exists.</li>
+<li>Sending the file to your accountant is a send, so it stops at an approval card first.</li>
+</ul>
+<h2>Good to know</h2>
+<ul>
+<li>Blurry or crumpled receipts can be misread. Kana compares the total so you can spot it, but glance at the items.</li>
+<li>Photos inside the Photos app can't be opened directly; drag the photo onto Kana instead.</li>
+</ul>
+
+  <div class="gcta"><p>Kana: hand off your Mac chores to an AI agent</p><a href="../?utm_source=guide&utm_medium=content&utm_campaign=receipt-photo-to-excel">Get Kana for Mac &rarr;</a></div>
+  <div class="gmore"><b>More guides</b><ul><li><a href="ai-agent-for-mac.html">AI Agents for Mac in 2026: Three Kinds and How to Choose</a></li><li><a href="claude-code-desktop-companions.html">Claude Code Desktop Companions: Status Pets vs. Errand Helpers</a></li><li><a href="tidy-mac-downloads-folder.html">How to Tidy Your Mac Downloads Folder in One Sentence</a></li><li><a href="compare-hotel-prices-with-ai.html">Let an AI Agent Compare Hotel Prices for You (With Real Links)</a></li></ul></div>
+</article>
+</main>
+<p class="gfoot">© 2026 YOOANPAPA. Kana is an independent product, not affiliated with Anthropic. Claude is a trademark of Anthropic.</p>
+</body>
+</html>

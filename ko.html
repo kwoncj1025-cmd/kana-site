@@ -335,6 +335,20 @@ html.og .nav,html.og .hero .btns,html.og .hero .note{display:none}html.og .say{a
 @media (max-width:900px){.jobs{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.jobs li{padding-top:250px}.jobs .f{width:124px;height:280px}.jobs .n{left:calc(50% - 86px)}}
 
+/* ── 새로 되는 일: 라벤더 판, 실측 숫자 카드 여섯 ── */
+.news{background:var(--lav);padding:104px 0 96px}
+.news h2{text-align:center}
+.news .lead{max-width:600px;margin:22px auto 0;text-align:center;color:var(--mute)}
+.nw{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.nw li{background:#fff;border:2px solid var(--ink);border-radius:22px;padding:24px 22px 22px;box-shadow:0 5px 0 var(--ink);display:flex;flex-direction:column;gap:10px}
+.nw b{font-size:20px;line-height:1.3}
+.nw p{color:var(--mute);line-height:1.5}
+.nw .m{align-self:flex-start;margin-top:auto;background:var(--lime);border:2px solid var(--ink);border-radius:18px;padding:6px 12px;font:700 var(--t-small)/1.3 var(--sans);color:var(--ink)}
+.news .src{max-width:640px;margin:28px auto 0;text-align:center;font-size:var(--t-small);color:var(--mute)}
+.news .src+.src{margin-top:10px}.news .src a{color:var(--cob);font-weight:700}
+@media (max-width:900px){.nw{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.nw{grid-template-columns:1fr}}
+
 /* ── 안전: 라임 판 ── */
 .safe{background:var(--lime);padding:104px 0}
 .safe .in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:center}
@@ -477,7 +491,24 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
         <p class="ans"><span lang="ko">초안이에요. 보내기 전에 봐 줘요.</span></p>
         <p class="ot"><span lang="ko">고딕 옷 · 독촉은 단호하게</span></p></li>
     </ol>
-    <p class="also"><span lang="ko">메일 답장·전달·첨부 저장, 메시지와 받은 문자, 일정 옮기기와 고치기, 미리 알림, 「10분 뒤 알려 줘」 타이머, 메모, 연락처, 맥 전체에서 파일 찾기와 열기, 엑셀·워드·파워포인트·PDF, 웹 찾기와 예약·결제(승인 뒤), 음악 틀기와 소리 크기, 앱 열기와 단축어, 매일·매주 되풀이하는 일, 말로 부탁하기까지 해요. 옷은 13벌 모두 들어 있어요.</span></p>
+    <p class="also"><span lang="ko">메일 답장·전달·첨부 저장, 메시지와 받은 문자, 일정 옮기기와 고치기, 미리 알림, 「10분 뒤 알려 줘」 타이머, 메모, 연락처, 맥 전체에서 파일 찾기와 열기, 엑셀·워드·파워포인트·PDF, 영수증 사진을 엑셀 표로, 웹 찾기와 예약·결제(승인 뒤), 음악 틀기와 소리 크기, 앱 열기와 단축어, 매일·매주 되풀이하는 일, 말로 부탁하기까지 해요. 옷은 13벌 모두 들어 있어요.</span></p>
+  </div>
+</section>
+
+<section class="pan news" aria-labelledby="h-news">
+  <div class="in">
+    <h2 class="big" id="h-news"><span lang="ko">이제 이런 것도<br>말 한마디로.</span></h2>
+    <p class="lead"><span lang="ko">귀찮아서 미뤄 둔 일, 시간을 잡아먹던 일부터 맡겨 보세요.</span></p>
+    <ol class="nw">
+      <li><b><span lang="ko">다운로드 폴더 정리</span></b><p><span lang="ko">「다운로드 정리해 줘」 한 마디면 종류별로 나눌 안을 쪽지 한 장에 보여 주고, OK 하면 한 번에 옮겨요. 「되돌려 줘」 하면 제자리로.</span></p><span class="m"><span lang="ko">파일 142개 · 쪽지 1장 · 약 5초</span></span></li>
+      <li><b><span lang="ko">호텔 값 비교</span></b><p><span lang="ko">카나 브라우저로 Booking·Agoda 를 직접 열어 화면에 뜬 값 그대로 비교해요. 줄마다 「열기」 링크와 본 시각이 붙고, 로봇 확인이 뜨면 멈춰요.</span></p><span class="m"><span lang="ko">4~5곳 · 30초대 · 쪽지 0</span></span></li>
+      <li><b><span lang="ko">보내기용 PDF</span></b><p><span lang="ko">「한 쪽으로 정리해서 PDF로」 하면 고칠 수 있는 문서와 보내기용 PDF를 같이 만들어요. PDF에는 글꼴이 박혀 있어 어느 컴퓨터에서 열어도 같아요.</span></p><span class="m"><span lang="ko">한 쪽 · 약 20~45초</span></span></li>
+      <li><b><span lang="ko">카나 수첩</span></b><p><span lang="ko">호칭, 일하는 시간, 내 브랜드 색처럼 기억할 것을 적어요. 적기 전에 먼저 묻고, 수첩은 이 맥에만 있어요. 직접 고친 줄은 카나가 덮어쓰지 않아요.</span></p><span class="m"><span lang="ko">이 맥에만 저장 · 직접 고칠 수 있음</span></span></li>
+      <li><b><span lang="ko">먼저 챙기기</span></b><p><span lang="ko">정해 둔 시각이 되면 아침 브리핑(오늘 일정·밤사이 메일·마감)을 먼저 말해요. 메일 지켜보기도 걸 수 있고, 바뀐 게 없으면 조용히 있어요.</span></p><span class="m"><span lang="ko">아침 브리핑 약 5초</span></span></li>
+      <li><b><span lang="ko">대충 말해도</span></b><p><span lang="ko">「담주 화욜 오후 치과」처럼 줄여 말해도 되묻지 않고 다음 주 화요일 오후 3시로 넣고, 왜 그 시각인지 한 줄로 말해요.</span></p><span class="m"><span lang="ko">줄여 말한 부탁 15개 중 13개 끝까지 · 거짓 0</span></span></li>
+    </ol>
+    <p class="src"><span lang="ko">숫자는 출시판(2026년 11월 28일)을 실제 맥에서 잰 값이에요. 맥과 Claude 상태에 따라 달라질 수 있어요.</span></p>
+    <p class="src"><span lang="ko">어떻게 하는지 보기: <a href="guides/tidy-mac-downloads-folder-ko.html">다운로드 정리</a> · <a href="guides/compare-hotel-prices-with-ai-ko.html">호텔 값 비교</a> · <a href="guides/receipt-photo-to-excel-ko.html">영수증 사진을 엑셀로</a></span></p>
   </div>
 </section>
 

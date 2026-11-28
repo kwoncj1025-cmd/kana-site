@@ -335,6 +335,20 @@ html.og .nav,html.og .hero .btns,html.og .hero .note{display:none}html.og .say{a
 @media (max-width:900px){.jobs{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.jobs li{padding-top:250px}.jobs .f{width:124px;height:280px}.jobs .n{left:calc(50% - 86px)}}
 
+/* ── 새로 되는 일: 라벤더 판, 실측 숫자 카드 여섯 ── */
+.news{background:var(--lav);padding:104px 0 96px}
+.news h2{text-align:center}
+.news .lead{max-width:600px;margin:22px auto 0;text-align:center;color:var(--mute)}
+.nw{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.nw li{background:#fff;border:2px solid var(--ink);border-radius:22px;padding:24px 22px 22px;box-shadow:0 5px 0 var(--ink);display:flex;flex-direction:column;gap:10px}
+.nw b{font-size:20px;line-height:1.3}
+.nw p{color:var(--mute);line-height:1.5}
+.nw .m{align-self:flex-start;margin-top:auto;background:var(--lime);border:2px solid var(--ink);border-radius:18px;padding:6px 12px;font:700 var(--t-small)/1.3 var(--sans);color:var(--ink)}
+.news .src{max-width:640px;margin:28px auto 0;text-align:center;font-size:var(--t-small);color:var(--mute)}
+.news .src+.src{margin-top:10px}.news .src a{color:var(--cob);font-weight:700}
+@media (max-width:900px){.nw{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.nw{grid-template-columns:1fr}}
+
 /* ── 안전: 라임 판 ── */
 .safe{background:var(--lime);padding:104px 0}
 .safe .in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:center}
@@ -477,7 +491,24 @@ html[data-lang=en] .row{font-family:var(--en-d);text-transform:uppercase}
         <p class="ans"><span lang="en">Here is the draft. Please check it before I send.</span></p>
         <p class="ot"><span lang="en">Gothic · firm reminders</span></p></li>
     </ol>
-    <p class="also"><span lang="en">Mail replies, forwards and saved attachments, Messages (including texts you received), moving and editing events, Reminders, “remind me in 10 minutes” timers, Notes, Contacts, finding and opening files anywhere in your home folder, Excel, Word, PowerPoint and PDF, web search plus bookings and payments (after you approve), playing music and setting the volume, opening apps and running your Shortcuts, daily or weekly routines, and asking by voice. All 13 outfits are included.</span></p>
+    <p class="also"><span lang="en">Mail replies, forwards and saved attachments, Messages (including texts you received), moving and editing events, Reminders, “remind me in 10 minutes” timers, Notes, Contacts, finding and opening files anywhere in your home folder, Excel, Word, PowerPoint and PDF, receipt photos into spreadsheets, web search plus bookings and payments (after you approve), playing music and setting the volume, opening apps and running your Shortcuts, daily or weekly routines, and asking by voice. All 13 outfits are included.</span></p>
+  </div>
+</section>
+
+<section class="pan news" aria-labelledby="h-news">
+  <div class="in">
+    <h2 class="big" id="h-news"><span lang="en">Now these<br>take one sentence.</span></h2>
+    <p class="lead"><span lang="en">Start with the chores you keep putting off.</span></p>
+    <ol class="nw">
+      <li><b><span lang="en">Tidy your Downloads</span></b><p><span lang="en">Say “tidy my Downloads”. Kana shows the plan on one card, moves everything at once when you OK it, and puts it all back if you say “undo”.</span></p><span class="m"><span lang="en">142 files · 1 card · about 5 s</span></span></li>
+      <li><b><span lang="en">Compare hotel prices</span></b><p><span lang="en">Kana opens Booking and Agoda in her own browser and compares the prices shown on screen. Every row has an Open link and the time she checked. If a robot check appears, she stops.</span></p><span class="m"><span lang="en">4–5 hotels · about 30–40 s · 0 cards</span></span></li>
+      <li><b><span lang="en">PDF ready to send</span></b><p><span lang="en">Ask for “one page, as a PDF” and you get an editable document plus a PDF ready to send, with fonts embedded so it looks the same everywhere.</span></p><span class="m"><span lang="en">1 page · about 20–45 s</span></span></li>
+      <li><b><span lang="en">Kana’s notebook</span></b><p><span lang="en">She keeps notes like what to call you, your hours and your brand colors. She asks before writing anything down, the notebook stays on this Mac, and lines you edit yourself are never overwritten.</span></p><span class="m"><span lang="en">Stored on this Mac · you can edit it</span></span></li>
+      <li><b><span lang="en">Heads-up before you ask</span></b><p><span lang="en">At the time you set, she gives a morning brief on her own: today’s events, overnight mail and deadlines. You can also have her watch for mail. If nothing changed, she stays quiet.</span></p><span class="m"><span lang="en">Morning brief in about 5 s</span></span></li>
+      <li><b><span lang="en">Say it loosely</span></b><p><span lang="en">Say “dentist next tue afternoon” and she books next Tuesday at 3 p.m. without asking back, then tells you in one line why she picked that time.</span></p><span class="m"><span lang="en">13 of 15 loose requests finished · 0 false claims</span></span></li>
+    </ol>
+    <p class="src"><span lang="en">Numbers were measured on a real Mac with the November 28, 2026 release. They can vary with your Mac and Claude.</span></p>
+    <p class="src"><span lang="en">See how: <a href="guides/tidy-mac-downloads-folder.html">Tidy Downloads</a> · <a href="guides/compare-hotel-prices-with-ai.html">Compare hotel prices</a> · <a href="guides/receipt-photo-to-excel.html">Receipt photo to Excel</a></span></p>
   </div>
 </section>
 
